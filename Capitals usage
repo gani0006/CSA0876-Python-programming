@@ -1,0 +1,13 @@
+def is_capital_usage_correct(word):
+    if word.isupper():
+        return True
+    if word.islower():
+        return True
+    if word[0].isupper() and word[1:].islower():
+        return True
+    return False
+
+
+words = ["USA", "demo", "Google", "FlaG"]
+results = [is_capital_usage_correct(word) for word in words]
+print(results)
