@@ -1,0 +1,30 @@
+def convert_to_base7(num):
+    
+    if num == 0:
+        return "0"
+
+    
+    negative = num < 0
+    num = abs(num)
+
+    
+    base7_digits = []
+
+    
+    while num > 0:
+        base7_digits.append(str(num % 7))
+        num //= 7
+
+   
+    base7_str = ''.join(base7_digits[::-1])
+
+   
+    if negative:
+        base7_str = '-' + base7_str
+
+    return base7_str
+
+
+print(convert_to_base7(100))  
+print(convert_to_base7(-7))   
+print(convert_to_base7(0))    
