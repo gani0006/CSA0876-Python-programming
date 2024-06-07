@@ -1,0 +1,11 @@
+def isPowerOfFour(n):
+    if n <= 0:
+        return False
+    while n % 3 == 0:
+        n /= 3
+    return n==1
+
+
+n1 = 9
+print("Test Case 1: Input:", n1)
+print("Output:", isPowerOfFour(n1))
