@@ -1,0 +1,15 @@
+def str_str(haystack, needle):
+    if not needle:
+        return 0
+    if needle not in haystack:
+        return -1
+    return haystack.index(needle)
+
+
+haystack1 = "sadbutsad"
+needle1 = "sad"
+print("Test Case 1 Output:", str_str(haystack1, needle1))
+
+haystack2 = "leetcode"
+needle2 = "leeto"
+print("Test Case 2 Output:", str_str(haystack2, needle2))
