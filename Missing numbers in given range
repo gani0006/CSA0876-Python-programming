@@ -1,0 +1,21 @@
+def getMissingNumbers(arr): 
+
+	
+	for num in arr: 
+
+		
+		arr[abs(num)-1] = -(abs(arr[abs(num)-1])) 
+
+	
+	for pos, num in enumerate(arr): 
+
+		
+		if num > 0: 
+			print(pos + 1, end =' ') 
+
+
+
+arr = [5, 5, 4, 4, 2] 
+
+
+getMissingNumbers(arr) 
