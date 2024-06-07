@@ -1,0 +1,9 @@
+def missingNumber(nums):
+    n = len(nums)
+    total_sum = n * (n + 1) // 2
+    array_sum = sum(nums)
+    return total_sum - array_sum
+
+nums1 = [0,1,5,2,8,4,6,9,7]
+print("Test Case 1: Input:", nums1)
+print("Output:", missingNumber(nums1))
