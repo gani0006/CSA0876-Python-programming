@@ -1,0 +1,18 @@
+def common_prefix(strs):
+    strs.sort()
+    if not strs:
+        return " "
+    if len(strs) == 1:
+        return strs[0]
+
+    first = strs[0]
+    last = strs[-1]
+    temp = ""
+    for i in range(len(first)):
+        if first[i] == last[i]:
+            temp = temp + first[i]
+        else:
+            break
+    return temp
+strs = ['flower', 'flow', 'flight']
+print(common_prefix(strs))
