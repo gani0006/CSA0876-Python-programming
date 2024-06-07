@@ -1,0 +1,19 @@
+def find_complement(num):
+    if num == 0:
+        return 1
+
+    
+    bit_length = num.bit_length()
+
+   
+    mask = (1 << bit_length) - 1
+
+    
+    return num ^ mask
+
+
+num = 5
+print(find_complement(num))  
+
+num = 1
+print(find_complement(num)) 
